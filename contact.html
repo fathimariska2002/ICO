@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — ICO</title>
+  <link rel="icon" type="image/jpeg" href="assets/ICO.jpeg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/ICO.jpeg" alt="ICO Logo" class="logo-img" />
+        <span class="logo-text">ICO</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="membership.html">Membership & Partners</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+
+
+  <section class="page-hero" style="background: url('assets/contact banner.jpg') center/cover no-repeat; position: relative;">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content animate-fadeInUp">
+      <span class="section-tag">Get in Touch</span>
+      <h1>Contact <span class="gold-text">Us</span></h1>
+      <p>We welcome inquiries, partnerships, and collaboration opportunities.</p>
+    </div>
+  </section>
+
+  <section class="section-pad">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-info animate-on-scroll">
+          <span class="section-tag">Our Offices</span>
+          <h2>Reach Out to ICO</h2>
+          <p>For membership, partnerships, or media inquiries, please reach out to the Executive Secretariat.</p>
+
+          <div class="office-cards">
+            <div class="office-card">
+              <div class="office-icon"><i class="fas fa-building"></i></div>
+              <div class="office-details">
+                <h4>Global Headquarters</h4>
+                <p>447 Broadway, 2nd Floor, #852<br />New York, NY 10013<br />United States</p>
+              </div>
+            </div>
+            <div class="office-card">
+              <div class="office-icon"><i class="fas fa-landmark"></i></div>
+              <div class="office-details">
+                <h4>Secretariat — Brussels</h4>
+                <p>Rue de Grand Bigard 14<br />1082 Berchem St Agathe<br />Brussels, Belgium</p>
+                <p><i class="fas fa-phone"></i> +32 499 31 50 29</p>
+              </div>
+            </div>
+            <div class="office-card">
+              <div class="office-icon"><i class="fas fa-envelope"></i></div>
+              <div class="office-details">
+                <h4>Email</h4>
+                <p><a href="mailto:info@un-ico.org">info@un-ico.org</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="country-offices">
+            <h4>Country Offices</h4>
+            <div class="country-grid">
+              <div class="country-item">
+                <span class="flag-icon">🇸🇦</span>
+                <div>
+                  <strong>Saudi Arabia</strong>
+                  <p>+966 55 555 5853</p>
+                </div>
+              </div>
+              <div class="country-item">
+                <span class="flag-icon">🇬🇧</span>
+                <div>
+                  <strong>United Kingdom</strong>
+                  <p>+44 737 964 4150</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap animate-on-scroll" style="--delay:0.2s">
+          <h3>Send Us a Message</h3>
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/xjgjagab" method="POST" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="country">Country</label>
+              <input type="text" id="country" name="country" placeholder="Your country" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" rows="5" placeholder="Type your inquiry here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="map-section">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425878459418!3d40.71277937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a165bedccab%3A0x2cb2ddf003b5ae01!2s447%20Broadway%2C%20New%20York%2C%20NY%2010013!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+      width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+      title="ICO Headquarters Location">
+    </iframe>
+  </section>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <footer class="footer">
+    <div class="footer-newsletter">
+      <div class="container">
+        <p>Sign up for our newsletter</p>
+        <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+          <input type="email" placeholder="Email" aria-label="Email address" required />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/ICO.jpeg" alt="ICO" class="footer-logo" />
+          <p>International Congress Organization — advancing global dialogue, justice, and human rights since its founding in Brussels.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><i class="fas fa-map-marker-alt"></i> 447 Broadway, 2nd Floor, #852, New York, NY 10013, USA</p>
+          <p><i class="fas fa-map-marker-alt"></i> Rue de Grand Bigard 14, 1082 Brussels, Belgium</p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:info@un-ico.org">info@un-ico.org</a></p>
+          <p><i class="fas fa-phone"></i> +32 499 31 50 29</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 International Congress Organization (ICO). All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+  <script>
+    function handleNewsletterSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button');
+      btn.textContent = '✓ Subscribed!';
+      setTimeout(() => { btn.textContent = 'Submit'; e.target.reset(); }, 3000);
+    }
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => backToTop.classList.toggle('visible', window.scrollY > 400));
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
+</body>
+</html>
