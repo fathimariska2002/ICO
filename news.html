@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Announcements & News — ICO</title>
+  <link rel="icon" type="image/jpeg" href="assets/ICO.jpeg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/ICO.jpeg" alt="ICO Logo" class="logo-img" />
+        <span class="logo-text">ICO</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="membership.html">Membership & Partners</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="news.html" class="active">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+
+
+  <section class="page-hero" style="background: url('assets/news banner.jpg') center/cover no-repeat; position: relative;">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content animate-fadeInUp">
+      <span class="section-tag">Stay Informed</span>
+      <h1>Announcements <span class="gold-text">&amp; News</span></h1>
+      <p>The latest updates from ICO and global developments relevant to our mission.</p>
+    </div>
+  </section>
+
+  <section class="section-pad bg-light carousel-section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">Latest Updates</span>
+        <h2>News Highlights</h2>
+        <p>Scroll through the latest from ICO and our global partners.</p>
+      </div>
+      <div class="news-carousel-wrap animate-on-scroll">
+        <div class="news-carousel-track" id="newsCarouselTrack">
+          <div class="news-carousel-slide">
+            <div class="announcement-card" style="margin-bottom:0;">
+              <div class="ann-img">
+                <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=700&q=80" alt="ICO Announcement" />
+                <span class="ann-tag">Announcement</span>
+              </div>
+              <div class="ann-content">
+                <span class="ann-date"><i class="fas fa-calendar"></i> April 2025</span>
+                <h3>ICO Launches New Webinar Series on Displaced Communities</h3>
+                <p>The International Congress Organization is proud to announce the launch of "Global Voices of the Displaced," a flagship webinar series.</p>
+                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="news-carousel-slide">
+            <div class="announcement-card" style="margin-bottom:0;">
+              <div class="ann-img">
+                <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=400&q=80" alt="Partnership" />
+                <span class="ann-tag">Partnership</span>
+              </div>
+              <div class="ann-content">
+                <span class="ann-date"><i class="fas fa-calendar"></i> March 2025</span>
+                <h3>ICO Strengthens Partnership with International Diplomatic Union</h3>
+                <p>ICO and IDU sign a memorandum of understanding to advance global diplomacy and humanitarian cooperation.</p>
+                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="news-carousel-slide">
+            <div class="announcement-card" style="margin-bottom:0;">
+              <div class="ann-img">
+                <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=400&q=80" alt="Conference" />
+                <span class="ann-tag">Event</span>
+              </div>
+              <div class="ann-content">
+                <span class="ann-date"><i class="fas fa-calendar"></i> February 2025</span>
+                <h3>ICO Participates in International Human Rights Forum</h3>
+                <p>ICO representatives joined global leaders at the International Human Rights Forum to advocate for vulnerable populations.</p>
+                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="news-carousel-slide">
+            <div class="announcement-card" style="margin-bottom:0;">
+              <div class="ann-img">
+                <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=400&q=80" alt="Humanitarian" />
+                <span class="ann-tag">Humanitarian</span>
+              </div>
+              <div class="ann-content">
+                <span class="ann-date"><i class="fas fa-calendar"></i> January 2025</span>
+                <h3>ICO Launches Capacity Building Program in East Africa</h3>
+                <p>A new capacity building initiative targeting displaced communities in East Africa, providing education and legal support.</p>
+                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-btn" id="newsPrev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+        <div class="carousel-dots" id="newsDots"></div>
+        <button class="carousel-btn" id="newsNext" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad">
+    <div class="container">
+      <div class="news-layout">
+        <div class="news-main">
+          <div class="section-header animate-on-scroll" style="text-align:left; margin-bottom:2rem;">
+            <span class="section-tag">ICO Announcements</span>
+            <h2>Latest from ICO</h2>
+          </div>
+
+          <div class="announcement-card featured animate-on-scroll">
+            <div class="ann-img">
+              <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=700&q=80" alt="ICO Announcement" />
+              <span class="ann-tag">Announcement</span>
+            </div>
+            <div class="ann-content">
+              <span class="ann-date"><i class="fas fa-calendar"></i> April 2025</span>
+              <h3>ICO Launches New Webinar Series on Displaced Communities</h3>
+              <p>The International Congress Organization is proud to announce the launch of "Global Voices of the Displaced," a flagship webinar series designed to amplify the experiences and aspirations of displaced communities worldwide.</p>
+              <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="announcements-grid">
+            <div class="announcement-card animate-on-scroll" style="--delay:0.1s">
+              <div class="ann-img small">
+                <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=400&q=80" alt="Partnership" />
+                <span class="ann-tag">Partnership</span>
+              </div>
+              <div class="ann-content">
+                <span class="ann-date"><i class="fas fa-calendar"></i> March 2025</span>
+                <h3>ICO Strengthens Partnership with International Diplomatic Union</h3>
+                <p>ICO and IDU sign a memorandum of understanding to advance global diplomacy and humanitarian cooperation.</p>
+                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="announcement-card animate-on-scroll" style="--delay:0.2s">
+              <div class="ann-img small">
+                <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=400&q=80" alt="Conference" />
+                <span class="ann-tag">Event</span>
+              </div>
+              <div class="ann-content">
+                <span class="ann-date"><i class="fas fa-calendar"></i> February 2025</span>
+                <h3>ICO Participates in International Human Rights Forum</h3>
+                <p>ICO representatives joined global leaders at the International Human Rights Forum to advocate for vulnerable populations.</p>
+                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+            <div class="announcement-card animate-on-scroll" style="--delay:0.3s">
+              <div class="ann-img small">
+                <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=400&q=80" alt="Humanitarian" />
+                <span class="ann-tag">Humanitarian</span>
+              </div>
+              <div class="ann-content">
+                <span class="ann-date"><i class="fas fa-calendar"></i> January 2025</span>
+                <h3>ICO Launches Capacity Building Program in East Africa</h3>
+                <p>A new capacity building initiative targeting displaced communities in East Africa, providing education and legal support.</p>
+                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="news-sidebar">
+          <div class="sidebar-widget animate-on-scroll">
+            <h3><i class="fas fa-globe"></i> Global News</h3>
+            <p>For international news related to peace, human rights, and global affairs:</p>
+            <a href="https://un-news.org/en" target="_blank" rel="noopener" class="global-news-link">
+              <i class="fas fa-external-link-alt"></i>
+              Visit UN News
+            </a>
+          </div>
+          <div class="sidebar-widget animate-on-scroll" style="--delay:0.1s">
+            <h3><i class="fas fa-bell"></i> Stay Updated</h3>
+            <p>Subscribe to receive ICO announcements and updates directly to your inbox.</p>
+            <form class="subscribe-form" onsubmit="return false;">
+              <input type="email" placeholder="Your email address" aria-label="Email address" />
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
+          <div class="sidebar-widget animate-on-scroll" style="--delay:0.2s">
+            <h3><i class="fas fa-tags"></i> Categories</h3>
+            <div class="tag-cloud">
+              <span class="tag">Announcements</span>
+              <span class="tag">Partnerships</span>
+              <span class="tag">Events</span>
+              <span class="tag">Humanitarian</span>
+              <span class="tag">Human Rights</span>
+              <span class="tag">Education</span>
+              <span class="tag">Research</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <footer class="footer">
+    <div class="footer-newsletter">
+      <div class="container">
+        <p>Sign up for our newsletter</p>
+        <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+          <input type="email" placeholder="Email" aria-label="Email address" required />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/ICO.jpeg" alt="ICO" class="footer-logo" />
+          <p>International Congress Organization — advancing global dialogue, justice, and human rights since its founding in Brussels.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p><i class="fas fa-map-marker-alt"></i> 447 Broadway, 2nd Floor, #852, New York, NY 10013, USA</p>
+          <p><i class="fas fa-map-marker-alt"></i> Rue de Grand Bigard 14, 1082 Brussels, Belgium</p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:info@un-ico.org">info@un-ico.org</a></p>
+          <p><i class="fas fa-phone"></i> +32 499 31 50 29</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 International Congress Organization (ICO). All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/carousel.js"></script>
+  <script>
+    function handleNewsletterSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button');
+      btn.textContent = '✓ Subscribed!';
+      setTimeout(() => { btn.textContent = 'Submit'; e.target.reset(); }, 3000);
+    }
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => backToTop.classList.toggle('visible', window.scrollY > 400));
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
+</body>
+</html>
