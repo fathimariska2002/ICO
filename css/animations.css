@@ -1,0 +1,171 @@
+/* ============================================================
+   ICO — ANIMATIONS
+   ============================================================ */
+
+/* ── FADE IN UP (hero) ── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 0.9s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+.animate-fadeInUp > * { animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) both; }
+.animate-fadeInUp > *:nth-child(1) { animation-delay: 0.1s; }
+.animate-fadeInUp > *:nth-child(2) { animation-delay: 0.25s; }
+.animate-fadeInUp > *:nth-child(3) { animation-delay: 0.4s; }
+.animate-fadeInUp > *:nth-child(4) { animation-delay: 0.55s; }
+.animate-fadeInUp > *:nth-child(5) { animation-delay: 0.7s; }
+
+/* ── SCROLL-TRIGGERED ── */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: var(--delay, 0s);
+}
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── FADE IN LEFT ── */
+.animate-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: var(--delay, 0s);
+}
+.animate-left.visible { opacity: 1; transform: translateX(0); }
+
+/* ── FADE IN RIGHT ── */
+.animate-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: var(--delay, 0s);
+}
+.animate-right.visible { opacity: 1; transform: translateX(0); }
+
+/* ── SCALE IN ── */
+.animate-scale {
+  opacity: 0;
+  transform: scale(0.88);
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+              transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: var(--delay, 0s);
+}
+.animate-scale.visible { opacity: 1; transform: scale(1); }
+
+/* ── COUNTER ANIMATION ── */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.stat-num.counting { animation: countUp 0.5s ease both; }
+
+/* ── SHIMMER LOADING ── */
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* ── GOLD GLOW PULSE ── */
+@keyframes goldGlow {
+  0%, 100% { box-shadow: 0 0 12px rgba(200,168,75,0.2); }
+  50%       { box-shadow: 0 0 28px rgba(200,168,75,0.5); }
+}
+.gold-glow { animation: goldGlow 3s ease-in-out infinite; }
+
+/* ── FLOAT ── */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); }
+}
+.float { animation: float 4s ease-in-out infinite; }
+
+/* ── ROTATE SLOW ── */
+@keyframes rotateSlow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* ── PARTICLE DOTS (hero bg) ── */
+@keyframes particleDrift {
+  0%   { transform: translateY(0) translateX(0); opacity: 0.6; }
+  50%  { opacity: 1; }
+  100% { transform: translateY(-80px) translateX(20px); opacity: 0; }
+}
+
+/* ── UNDERLINE DRAW ── */
+.underline-draw {
+  position: relative;
+  display: inline-block;
+}
+.underline-draw::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; left: 0;
+  width: 0; height: 2px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.underline-draw:hover::after,
+.underline-draw.active::after { width: 100%; }
+
+/* ── CARD HOVER LIFT ── */
+.hover-lift {
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 48px rgba(11,29,58,0.18);
+}
+
+/* ── STAGGER CHILDREN ── */
+.stagger-children > *:nth-child(1) { transition-delay: 0.05s; }
+.stagger-children > *:nth-child(2) { transition-delay: 0.12s; }
+.stagger-children > *:nth-child(3) { transition-delay: 0.19s; }
+.stagger-children > *:nth-child(4) { transition-delay: 0.26s; }
+.stagger-children > *:nth-child(5) { transition-delay: 0.33s; }
+.stagger-children > *:nth-child(6) { transition-delay: 0.40s; }
+
+/* ── PAGE TRANSITION ── */
+.page-transition {
+  animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+/* ── NAVBAR SLIDE DOWN ── */
+@keyframes navSlideDown {
+  from { transform: translateY(-100%); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
+.navbar { animation: navSlideDown 0.6s cubic-bezier(0.4, 0, 0.2, 1) both; }
+
+/* ── RIPPLE BUTTON ── */
+.btn { position: relative; overflow: hidden; }
+.btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.15);
+  border-radius: inherit;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.4s, opacity 0.4s;
+}
+.btn:active::after { transform: scale(2); opacity: 0; transition: 0s; }
+
+/* ── SECTION REVEAL LINE ── */
+.section-header::before {
+  content: '';
+  display: block;
+  width: 48px; height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  border-radius: 2px;
+  margin: 0 auto 1.2rem;
+}
